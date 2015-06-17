@@ -1,7 +1,7 @@
 Jissen01App::Application.routes.draw do
-  get "static_pages/home"
-  get "static_pages/services"
-  get "static_pages/map"
+  root  'static_pages#home'
+  match '/services',    to: 'static_pages#services',    via: 'get'
+  match '/map',   to: 'static_pages#map',   via: 'get'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
