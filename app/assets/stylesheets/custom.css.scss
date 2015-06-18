@@ -22,39 +22,6 @@ textarea {
   resize: vertical;
 }
 
-.center {
-  text-align: center;
-  h1 {
-    margin-bottom: 10px;
-  }
-}
-
-/* typography */
-
-h1, h2, h3, h4, h5, h6 {
-  line-height: 1;
-}
-
-h1 {
-  font-size: 3em;
-  letter-spacing: -2px;
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-h2 {
-  font-size: 1.2em;
-  letter-spacing: -1px;
-  margin-bottom: 30px;
-  text-align: center;
-  font-weight: normal;
-  color: $gray-light;
-}
-
-p {
-  font-size: 1.1em;
-  line-height: 1.7em;
-}
 
 
 /* header */
@@ -78,8 +45,8 @@ p {
 /* footer */
 
 footer {
-  margin-top: 45px;
-  padding-top: 5px;
+  margin-top: 10px;
+  padding: 10px 30px 0px 10px;
   border-top: 1px solid $gray-medium-light;
   color: $gray-light;
   a {
@@ -100,3 +67,127 @@ footer {
     }
   }
 }
+
+
+
+/* メインパネル */
+ div#main_panel {
+   padding: 0 0 0 0; /* メインパネル上部に余白を設定 */
+   height: 400px; /* メインパネルの高さを400pxに設定 */
+   background-image: image-url("main-bg02.jpg");
+   /* 背景を中央寄せで繰り返しなしで設定 */
+   background-size: cover; /* 背景画像をフルスクリーンで表示 */
+ }
+ 
+ div#main_panelArea {
+   margin: 0 auto; /* 横幅をautoにすることでコンテンツが中央寄りになります */
+   padding: 10px 0 0 0; /* メインパネルコンテンツ上部に余白を設定 */
+   width: 980px; /* 横幅を980ピクセルで設定 */
+ }
+ 
+ div#main_panelArea h1{
+   padding: 40px 0 0 10px;
+   margin-bottom: 10px;  /* h1の下に10pxの余白を設定 */
+   font-size: 300%; /* 182フォントサイズを元サイズの182%で表示 */
+   font-weight: bold; /* 太字 */
+   line-height: 1.0em; /* 上下に半行余白の段落の高さを設定 */
+   color: #000000; /* フォントの色を黒に設定 */
+ }
+ 
+ p {
+   padding: 10px 0 ; /* ホームページ全体の段落要素に上下10ピクセルの余白を設定します */
+   font-weight: bold; /* 太字 */
+   font-size: 130%;
+ }
+
+ div#main_panelArea p{
+   padding: 0 0 0 10px;
+   font-size: 175%;
+   font-weight: bold; /* 太字 */
+   color: #00bfff; /* フォントテキストに黒色を設定します */
+ }
+ 
+  div#designer {
+   float:right; /* 右寄せ設定 */
+   padding: 0 20px 0 0;
+ }  
+ 
+
+ div#main_panelArea .but:hover { /* ボタンにマウスが乗ったとき */
+   background-color: #31c8aa; /* ボタンの背景色を変更 */
+ }
+ 
+h2{
+  margin-bottom: 10px; /* h2タグの下部に10ピクセルの余白を設定 */
+  font-size: 170%; /* フォントサイズを元サイズの138.5%で表示 */
+  font-weight: bold; /* 太字 */
+  line-height: 2.0em; /* 上下に半行余白の段落の高さを設定 */
+  border-bottom: dotted 1px #999;  /* h2タグの下に1ピクセルの点線を設定 */
+}
+
+/* コンテンツエリア */
+ div.content_g {
+   padding: 60px 0; /* コンテンツエリアの上下に60ピクセルの余白を設定 */
+   width: 100%; /* 横幅を画面一杯に設定 */
+   border-bottom: solid 1px #EEE; /* コンテンツエリア下に1ピクセルの実線を設定 */
+   height:auto; /* 高さを自動調節（この設定がないと高さが認識されない） */
+
+ }
+
+ div.content_gArea {
+   margin: 0 auto; /* 横幅をautoにすることでコンテンツが中央寄りに設定 */
+   width: 980px; /* 横幅設定 */
+ }
+
+ div.content_gArea .main {
+   float:left; /* 左寄せ設定 */
+   width: 520px; /* 横幅設定 */
+   line-height: 2.0em; /* 上下に半行余白の段落の高さを設定 */
+ }
+
+/* 赤文字 */
+.red {
+  color: #CC0000;
+}
+
+/* 太文字 */
+.bold {
+  font-weight: bold;
+}
+
+ div.content_gArea .side {
+   float:right; /* 右寄せ設定 */
+   width: 460px; /* 横幅設定 */
+   text-align: right; /* 画像を右に寄せる */
+ }
+
+.side img {
+   -moz-border-radius:10px;/* Firefox用の角丸設定 */
+   -webkit-border-radius:10px; /* Safari,Google Chrome用の角丸設定 */
+   border-radius:10px; /* 角丸設定 */
+ }
+ 
+  /* コンテンツエリア グレー背景*/
+ div.content {
+   padding: 60px 0; /* コンテンツエリアの上下に60ピクセルの余白を設定 */
+   width: 100%; /* 横幅を画面一杯に設定 */
+   background: #F8F8F8;  /* 背景色をグレーに設定 */
+   border-bottom: solid 1px #EEE; /* コンテンツエリア下に1ピクセルの実線を設定 */
+
+ }
+
+ div.contentArea {
+   margin: 0 auto; /* 横幅をautoにすることでコンテンツが中央寄りに設定 */
+   width: 980px; /* 横幅設定 */
+   line-height: 2.0em; /* 上下に半行余白の段落の高さを設定 */
+ }
+
+ div.contentArea .main {
+   float:right; /* 右寄せ設定 */
+   width: 520px; /* 横幅設定 */
+ }
+ 
+  div.contentArea .side {
+   float:left; /* 左寄せ設定 */
+   width: 460px; /* 横幅設定 */
+ }
