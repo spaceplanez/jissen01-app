@@ -74,7 +74,7 @@ footer {
  div#main_panel {
    padding: 0 0 0 0; /* メインパネル上部に余白を設定 */
    height: 400px; /* メインパネルの高さを400pxに設定 */
-   background-image: image-url("main-bg02.jpg");
+   background-image: image-url("http://jissen01-app.com.s3.amazonaws.com/images/main-bg02.jpg");
    /* 背景を中央寄せで繰り返しなしで設定 */
    background-size: cover; /* 背景画像をフルスクリーンで表示 */
  }
